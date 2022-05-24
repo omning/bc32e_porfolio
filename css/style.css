@@ -1,0 +1,277 @@
+* {
+    font-size: 16px;
+    font-family: 'Hind', sans-serif;
+}
+
+header {
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 16px;
+}
+
+header .navbar-brand span {
+    font-size: 36px;
+    padding-left: 5px;
+}
+
+.navbar-brand i {
+    color: #35a22b;
+}
+
+.navbar-brand span {
+    font-size: 2rem;
+}
+
+.menu .nav-link {
+    color: white;
+}
+
+.menu .nav-item.active {
+    margin-left: 10px;
+    transition: all 0.5s;
+    color: #35a22b;
+}
+
+.menu li::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: #35a22b;
+    display: block;
+    /* color: #35a22b; */
+}
+
+.menu li.active::after {
+    width: 100%;
+}
+
+.menu li:hover::after {
+    width: 100%;
+}
+
+/* CAROUSEL */
+#demo {
+    position: relative;
+}
+
+#demo .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(39, 43, 54, .5);
+    z-index: 1;
+}
+
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.carousel-indicators .active {
+    background-color: #35a22b;
+}
+
+.carousel-item {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.carousel-item:nth-child(1) {
+    background-image: url(../img/finland.jpg);
+}
+
+.carousel-item:nth-child(2) {
+    background-image: url(../img/mountains.jpg);
+}
+
+.carousel-item:nth-child(3) {
+    background-image: url(../img/mountains-1.jpg);
+}
+
+.carousel-caption img {
+    width: 140px;
+    border-radius: 50%;
+}
+
+.carousel-caption h5 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.carousel-caption p {
+    font-size: 1.5rem;
+}
+
+.carousel-caption {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* PROJECTS */
+#project {
+    padding: 5rem 0;
+}
+
+#project .title h1 {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    background-color: #35a22b;
+}
+
+.nav-item a {
+    color: black;
+}
+
+.tab-content .tab-pane .card {
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 0 10px #00000057;
+    border: 1px solid transparent;
+}
+
+.tab-content .tab-pane .card:hover {
+    color: #35a22b;
+    border: 1px solid #35a22b;
+}
+
+/* SERVICE */
+#service {
+    background-image: url(../img/3.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    padding: 5rem 0;
+    background-attachment: fixed;
+}
+
+#service .card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(3px);
+    color: white;
+    padding: 40px;
+    transition: all 0.5s;
+}
+
+#service .card:hover {
+    background-color: black;
+    border: 1px solid white;
+}
+
+#service {
+    position: relative;
+}
+
+#service .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(7, 10, 12, .72);
+}
+
+#service .title {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+#service .content .card i {
+    color: #35a22b;
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+
+#service .content .card h4 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#service .content .card p {
+    line-height: 24px;
+    padding-top: 15px;
+}
+
+/* EDUCATION */
+#education {
+    position: relative;
+    padding: 5rem 0;
+}
+
+.edu-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../img/memphis_3.png);
+    background-position: bottom left;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+    width: 100%;
+    height: 100%;
+}
+
+#education .row {
+    align-items: center;
+}
+
+#education .row .card {
+    border: 1px solid transparent;
+    box-shadow: 0 0 30px 0 rgb(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+#education .row .card-body {
+    padding: 45px;
+}
+
+#education .row .card-body h2 {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+/* COPYRIGHT */
+#copyright {
+    background-color: #222;
+    color: #AAAAAA;
+    text-align: center;
+    padding: 50px 0;
+}
+
+#copyright .apps {
+    border-bottom: 1px solid #454545;
+    padding-bottom: 30px;
+}
+
+#copyright .apps i {
+    border: 1px solid #454545;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    border-radius: 50%;
+    text-align: center;
+    color: #AAAAAA;
+    margin: 0 5px;
+}
+
+#copyright .apps i:hover {
+    color: #35a22b;
+    border: 1px solid #35a22b;
+}
+
+#copyright p {
+    margin-top: 30px;
+}
